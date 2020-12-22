@@ -11,7 +11,9 @@ public class Download implements Runnable {
         this.url = url;
         this.folder = folder;
     }
-
+	public static void DownloadFile(String url, String folder){
+		
+	}
     @Override
     public void run() {
         URL u;

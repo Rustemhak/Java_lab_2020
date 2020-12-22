@@ -26,8 +26,6 @@ public class ThreadPool {
         // TODO: реализовать
         synchronized (tasks) {
             tasks.add(task);
-            //стереть
-            System.out.println("Added");
             tasks.notify();
         }
     }
