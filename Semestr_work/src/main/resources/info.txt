@@ -1,0 +1,42 @@
+1. Магазин комп. игр
+cart
+catalog
+about game
+lk
+replenishment
+sign up
+sign in
+2. Model
+    User
+id
+name
+money
+games
+login
+password
+    Game
+id
+name
+cost
+description
+color
+    Cart
+id
+user
+games
+total (dto)
+amount (dto)
+
+3. url
+get /register - sign up
+post /register - sign up/sign in
+get /login - sign in
+post /login - sign in/lk
+get /lk - lk
+get /catalog - catalog
+get /cart - cart
+post /cart - lk
+get /about-game/id - about game
+post /about-game/id - catalog
+get /replenishment - replenishment
+post /replenishment - lk
