@@ -2,8 +2,8 @@ package ru.itis.web.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import ru.itdrive.web.models.User;
-import ru.itdrive.web.repositories.UsersRepository;
+import ru.itis.web.models.User;
+import ru.itis.web.repositories.UsersRepository;
 
 import java.util.Optional;
 

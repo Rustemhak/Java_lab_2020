@@ -1,7 +1,7 @@
 package ru.itis.web.repositories;
 
 import org.springframework.stereotype.Component;
-import ru.itdrive.web.models.User;
+import ru.itis.web.models.User;
 
 import javax.sql.DataSource;
 import java.sql.*;

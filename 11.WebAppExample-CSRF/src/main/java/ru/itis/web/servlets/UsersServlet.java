@@ -1,8 +1,8 @@
 package ru.itis.web.servlets;
 
 import org.springframework.context.ApplicationContext;
-import ru.itdrive.web.models.User;
-import ru.itdrive.web.services.UsersService;
+import ru.itis.web.models.User;
+import ru.itis.web.services.UsersService;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;

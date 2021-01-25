@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-import static ru.itdrive.web.filters.ResponseUtil.sendForbidden;
+import static ru.itis.web.filters.ResponseUtil.sendForbidden;
 
 public class SecurityFilter implements Filter {
     @Override

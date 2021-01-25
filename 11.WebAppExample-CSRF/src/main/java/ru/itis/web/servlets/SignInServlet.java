@@ -1,7 +1,7 @@
 package ru.itis.web.servlets;
 
 import org.springframework.context.ApplicationContext;
-import ru.itdrive.web.services.SignInService;
+import ru.itis.web.services.SignInService;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-import static ru.itdrive.web.filters.ResponseUtil.sendForbidden;
+import static ru.itis.web.filters.ResponseUtil.sendForbidden;
 
 @WebServlet("/signIn")
 public class SignInServlet extends HttpServlet {

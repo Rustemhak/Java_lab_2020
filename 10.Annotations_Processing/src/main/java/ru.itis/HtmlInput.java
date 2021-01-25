@@ -1,3 +1,5 @@
+package ru.itis;
+
 import java.lang.annotation.*;
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.FIELD)

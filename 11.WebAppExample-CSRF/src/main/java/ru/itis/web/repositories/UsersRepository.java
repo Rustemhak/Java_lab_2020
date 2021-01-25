@@ -1,6 +1,6 @@
 package ru.itis.web.repositories;
 
-import ru.itdrive.web.models.User;
+import ru.itis.web.models.User;
 
 import java.util.Optional;
 

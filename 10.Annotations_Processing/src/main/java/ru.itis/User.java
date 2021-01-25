@@ -1,3 +1,4 @@
+package ru.itis;
 @HtmlForm(method = "post", action = "/users")
 public class User {
     @HtmlInput(name = "nickname", placeholder = "Ваш ник")

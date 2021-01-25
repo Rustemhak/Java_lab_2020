@@ -1,3 +1,4 @@
+package ru.itis;
 
 import com.google.auto.service.AutoService;
 import freemarker.cache.ClassTemplateLoader;

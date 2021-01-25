@@ -2,7 +2,7 @@ package ru.itis.web.listeners;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.itdrive.web.config.ApplicationConfig;
+import ru.itis.web.config.ApplicationConfig;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;

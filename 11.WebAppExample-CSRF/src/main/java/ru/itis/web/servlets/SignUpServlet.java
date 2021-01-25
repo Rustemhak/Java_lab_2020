@@ -1,8 +1,8 @@
 package ru.itis.web.servlets;
 
 import org.springframework.context.ApplicationContext;
-import ru.itdrive.web.models.User;
-import ru.itdrive.web.services.SignUpService;
+import ru.itis.web.models.User;
+import ru.itis.web.services.SignUpService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
