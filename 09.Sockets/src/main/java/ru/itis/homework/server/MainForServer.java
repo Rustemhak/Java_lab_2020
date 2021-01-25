@@ -1,8 +1,10 @@
-package ru.itis.homework;
+package ru.itis.homework.server;
 
 import com.beust.jcommander.JCommander;
-import ru.itis.homework.jcommander.*;
+import ru.itis.homework.jcommander.Args;
+
 public class MainForServer {
+
     public static void main(String[] args) {
         Args argv = new Args();
         JCommander.newBuilder()
@@ -10,7 +12,8 @@ public class MainForServer {
                 .build()
                 .parse(args);
 
-        EchoServerSocket serverSocket = new EchoServerSocket();
+        MultiClientServer serverSocket = new MultiClientServer();
         serverSocket.start(argv.port);
     }
+
 }
