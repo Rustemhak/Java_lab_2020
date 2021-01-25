@@ -1,0 +1,11 @@
+# Java_lab_2020
+1. [Thread Pool](https://github.com/Rustemhak/Java_lab_2020/tree/master/01.Threads/src)
+2. [JAR app](https://github.com/Rustemhak/Java_lab_2020/tree/master/02.JARS/src)
+3. Maven download project: [part 1](https://github.com/Rustemhak/Java_lab_2020/tree/master/03.1.JARSMaven) [part 2](https://github.com/Rustemhak/Java_lab_2020/tree/master/03.2.DownloadFile)
+4. [SimpleJDBCTemplate](https://github.com/Rustemhak/Java_lab_2020/tree/master/04.05.08.SimpleJDBCTemplate%2BLogginAuthFilter%2BFreemarker)
+5. [Logging](https://github.com/Rustemhak/Java_lab_2020/tree/master/04.05.08.SimpleJDBCTemplate%2BLogginAuthFilter%2BFreemarker)
+6. [PasswordEncoder feat. HttpSession](https://github.com/Rustemhak/Java_lab_2020/tree/master/06.PasswordEncoder%2Bfeat.HttpSession)
+7. [Entitty Manager](https://github.com/Rustemhak/Java_lab_2020/tree/master/07.Entity-Manager-Reflection/src/ru/itis)
+8. [Freemarker](https://github.com/Rustemhak/Java_lab_2020/tree/master/04.05.08.SimpleJDBCTemplate%2BLogginAuthFilter%2BFreemarker)
+9. [Sockets](https://github.com/Rustemhak/Java_lab_2020/tree/master/09.Sockets)
+10. [AnnotationProcessing](https://github.com/Rustemhak/Java_lab_2020/tree/master/10.Annotations_Processing)
