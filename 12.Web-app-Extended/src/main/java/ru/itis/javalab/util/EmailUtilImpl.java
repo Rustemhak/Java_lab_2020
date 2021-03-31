@@ -20,7 +20,7 @@ public class EmailUtilImpl implements EmailUtil {
 
     @Override
     public void sendMail(String to, String subject, String from, String text) {
-        executorService.execute(() -> javaMailSender.send(mimeMessage -> {
+            executorService.execute(() -> javaMailSender.send(mimeMessage -> {
             MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage);
             messageHelper.setFrom(from);
             messageHelper.setTo(to);

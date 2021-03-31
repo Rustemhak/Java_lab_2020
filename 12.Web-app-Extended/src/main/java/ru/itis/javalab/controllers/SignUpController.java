@@ -29,7 +29,7 @@ public class SignUpController {
 
     @PreAuthorize("permitAll()")
     @RequestMapping(value = "/signUp", method = RequestMethod.GET)
-    public String getSignUpPage(Model model, @AuthenticationPrincipal UserDetailsImpl userDetails) {
+    public String getSignUpPage(Model model) {
         model.addAttribute("userSignUpForm", new UserSignUpForm());
         return "sign_up_page";
     }

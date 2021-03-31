@@ -23,15 +23,15 @@
     <p style=".error">${namesErrorMessage}</p>
 </#if>
 <form action="/signIn" method="post">
+    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
     <label>Email</label>
     <@spring.formInput "userSignInForm.email"/>
     <@spring.showErrors "<br>" "error"/>
     <label><@spring.message 'sign_in_page.password'/></label>
     <@spring.formPasswordInput "userSignInForm.password"/>
     <@spring.showErrors "<br>" "error"/>
-    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
     <label>
-        <input type="checkbox" name="remember-me">Запомни меня
+        <input type="checkbox" name="remember-me"><@spring.message 'sign_in_page.remember'/>
     </label>
     <input type="submit" value=<@spring.message 'sign_in_page.title'/>>
 </form>

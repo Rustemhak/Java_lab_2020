@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import ru.itis.javalab.dto.UserSignUpForm;
+import ru.itis.javalab.models.Product;
 import ru.itis.javalab.models.User;
 import ru.itis.javalab.repositories.UsersRepository;
 import ru.itis.javalab.util.EmailUtil;
@@ -40,10 +41,11 @@ public class SignUpServiceImpl implements SignUpService {
                 .firstName(form.getFirstName())
                 .lastName(form.getLastName())
                 .email(form.getEmail())
-               .hashPassword(passwordEncoder.encode(form.getPassword()))
+                .hashPassword(passwordEncoder.encode(form.getPassword()))
                 .confirmCode(UUID.randomUUID().toString())
-                .state(User.State.NOT_CONFIRMED)
+                .state(User.State.ACTIVE)
                 .role(User.Role.USER)
+                .patronymic("NO")
                 .build();
 
         usersRepository.save(newUser);

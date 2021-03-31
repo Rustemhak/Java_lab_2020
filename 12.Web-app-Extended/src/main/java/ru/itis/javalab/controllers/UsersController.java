@@ -34,7 +34,7 @@ public class UsersController {
         } else {
             model.addAttribute("users", usersService.getAllUsers());
         }
-        return "users_view";
+        return "users_page";
     }
 
     @RequestMapping(value = "/users", method = RequestMethod.POST)

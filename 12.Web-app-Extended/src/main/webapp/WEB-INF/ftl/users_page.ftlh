@@ -14,10 +14,10 @@
             <th>id</th>
             <th>email</th>
         </tr>
-        <#list usersList as user>
+        <#list users as user>
             <tr>
-                <td>${user.id}</td>
-                <td>${user.email}</td>
+                <td>${user.firstName}</td>
+                <td>${user.lastName}</td>
             </tr>
         </#list>
     </table>

@@ -118,9 +118,7 @@ public class ApplicationConfig {
         properties.setProperty("hibernate.hbm2ddl.auto", "update");
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL95Dialect");
         properties.setProperty("hibernate.show_sql", "true");
-        properties.setProperty("hibernate.hbm2ddl.import_files_sql_extractor", "org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor");
         properties.setProperty("hibernate.connection.charSet","UTF-8");
-        properties.setProperty("hibernate.hbm2ddl.import_files","schema.sql");
         properties.setProperty("connection.autocommit","true");
         return properties;
     }
