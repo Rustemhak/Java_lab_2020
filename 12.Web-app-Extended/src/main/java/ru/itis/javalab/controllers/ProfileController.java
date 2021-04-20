@@ -10,6 +10,7 @@ import ru.itis.javalab.security.details.UserDetailsImpl;
 
 @Controller
 public class ProfileController {
+    @PreAuthorize("isAuthenticated()")
     @RequestMapping(value = "/profile", method = RequestMethod.GET)
     public String getProfilePage(@AuthenticationPrincipal UserDetailsImpl user, Model model) {
         model.addAttribute("email", user.getUsername());
