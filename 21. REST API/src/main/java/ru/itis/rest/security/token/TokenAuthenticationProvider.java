@@ -25,9 +25,11 @@ public class TokenAuthenticationProvider implements AuthenticationProvider {
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-        TokenAuthentication tokenAuthentication = (TokenAuthentication)authentication;
+        TokenAuthentication tokenAuthentication = (TokenAuthentication) authentication;
         UserDetails userDetails = userDetailsService.loadUserByUsername(authentication.getName());
-        tokenAuthentication.setAuthenticated(true);
+        if (userDetails.isCredentialsNonExpired()) {
+            tokenAuthentication.setAuthenticated(true);
+        }
         tokenAuthentication.setUserDetails(userDetails);
         return tokenAuthentication;
     }

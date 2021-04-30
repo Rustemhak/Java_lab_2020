@@ -9,7 +9,9 @@ Content-Type: application/json
 ###
 
 GET http://localhost:80/teachers
-X-TOKEN: 13afca74-1505-4730-ac26-7a53efa2f3c0
+X-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwicm9sZSI6IkFETUlOIiwic3RhdGUiOiJBQ1RJVkUiLCJlbWFpbCI6InNpZGlrb3YubWFyc2VsQGdtYWlsLmNvbSJ9.G7KEa3UgF0wmfAa_O61-hU7n4f16YAxvDOnGuDBRDyw
+
+
 
 ###
 

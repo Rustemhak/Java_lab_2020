@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import ru.itis.rest.models.JwtToken;
+import ru.itis.rest.models.RefreshToken;
 
 /**
  * 05.04.2021
@@ -18,4 +20,13 @@ import lombok.NoArgsConstructor;
 @Builder
 public class JwtTokenDto {
     private String jwtToken;
+    private String refreshToken;
+    private String accessToken;
+
+    public static JwtTokenDto from(RefreshToken refreshToken, String accessToken) {
+        return JwtTokenDto.builder()
+                .refreshToken(refreshToken.getToken())
+                .accessToken(accessToken)
+                .build();
+    }
 }

@@ -27,7 +27,7 @@ public class TokenAuthentication implements Authentication {
     }
 
     public void setUserDetails(UserDetails userDetails) {
-        this.userDetails = (UserDetailsImpl)userDetails;
+        this.userDetails = (UserDetailsImpl) userDetails;
     }
 
     @Override
@@ -64,6 +64,6 @@ public class TokenAuthentication implements Authentication {
 
     @Override
     public String getName() {
-        return token;
+        return userDetails.getUsername();
     }
 }

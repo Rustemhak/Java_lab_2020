@@ -1,6 +1,7 @@
 package ru.itis.rest.services;
 
 import ru.itis.rest.dto.EmailPasswordDto;
+import ru.itis.rest.dto.JwtTokenDto;
 import ru.itis.rest.dto.TokenDto;
 
 /**
@@ -11,5 +12,8 @@ import ru.itis.rest.dto.TokenDto;
  * @version v1.0
  */
 public interface LoginService {
-    TokenDto login(EmailPasswordDto emailPassword);
+//    TokenDto login(EmailPasswordDto emailPassword);
+    JwtTokenDto login(EmailPasswordDto emailPassword);
+    JwtTokenDto login(String refreshToken);
+
 }

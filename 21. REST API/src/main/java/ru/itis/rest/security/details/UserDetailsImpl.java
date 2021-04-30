@@ -18,13 +18,15 @@ import java.util.Collections;
 public class UserDetailsImpl implements UserDetails {
 
     private User user;
+    boolean expiredToken;
 
     public User getUser() {
         return user;
     }
 
-    public UserDetailsImpl(User user) {
+    public UserDetailsImpl(User user,boolean expiredToken) {
         this.user = user;
+        this.expiredToken = expiredToken;
     }
 
     @Override
@@ -55,7 +57,7 @@ public class UserDetailsImpl implements UserDetails {
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return true;
+        return !expiredToken;
     }
 
     @Override
