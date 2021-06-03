@@ -1,0 +1,38 @@
+POST http://localhost/login
+Content-Type: application/json
+
+{
+  "email": "qwerty@mail.ru",
+  "password": "qwerty007"
+}
+
+###
+#
+
+GET http://localhost/teachers
+ACCESS-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwicm9sZSI6IkFETUlOIiwic3RhdGUiOiJBQ1RJVkUiLCJleHAiOjE2MjI3MjkwMTksImVtYWlsIjoicnVzdGVtQG1haWwucnUifQ.Jx_Ylt_Z0uCgFWJCnDXHJZoYPdxpqkNkMDGdURz7sDM
+
+###
+
+POST http://localhost/refresh
+REFRESH-TOKEN:  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiZXhwIjoxNjIzMzMzMTQ3fQ.y6spSSrFyqqT47N607sKh3PokzUWPye8mdkyLxVIFww
+
+###
+
+GET http://localhost/logout
+ACCESS-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwIiwicm9sZSI6IkFETUlOIiwic3RhdGUiOiJBQ1RJVkUiLCJleHAiOjE2MjI2MzE1NTcsImVtYWlsIjoiYWtzYW5vdmthbWlsQGdtYWlsLmNvbSJ9.nkuQg9rd1Mw1hMjB7XuLWH-ODbDJABLAhclaWCKSz2E
+REFRESH-TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwIiwiZXhwIjoxNjIzMjM2MDU3fQ.c5nGWz1eGG0VGT5zfAsumn0sAfKw46E8QJ_FRh6m2Ac
+
+###
+
+GET http://localhost/teachers
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiY3JlYXRlZEF0IjoiMjAyMS0wNi0wM1QwOTozNDozNi4yMTIiLCJyb2xlIjoiQURNSU4iLCJzdGF0ZSI6IkFDVElWRSIsImVtYWlsIjoic2lkaWtvdi5tYXJzZWxAZ21haWwuY29tIn0.zprKFJCRTnqoewg6c3J7hpHsW5idS5ExfVr4lAnuMaQ
+###
+
+GET http://localhost/logout
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiY3JlYXRlZEF0IjoiMjAyMS0wNC0wOVQxNDo1NDozNS42MjMiLCJyb2xlIjoiQURNSU4iLCJzdGF0ZSI6IkFDVElWRSIsImVtYWlsIjoic2lkaWtvdi5tYXJzZWxAZ21haWwuY29tIn0._61QBr2RvzWYkEXzfoEQ2vZP-iMbMVnB2pT8Tkkq7Qk
+
+###
+
+POST http://localhost/users/1/block
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiY3JlYXRlZEF0IjoiMjAyMS0wNC0wOVQxNTozMDoyNS42MzciLCJyb2xlIjoiQURNSU4iLCJzdGF0ZSI6IkFDVElWRSIsImVtYWlsIjoic2lkaWtvdi5tYXJzZWxAZ21haWwuY29tIn0.ADgjiCC3psxg-CxjO2zAMXryiRXpbQ2mH13FPylnZrk
